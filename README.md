@@ -36,6 +36,18 @@ middleware search.
 pnpm i @tinyhttp/app
 ```
 
+## Get Started
+
+```ts
+import { App } from '@tinyhttp/app'
+
+const app = new App()
+
+app.get('/', (_, res) => res.send('<h1>Hello World</h1>'))
+
+app.listen(3000, () => console.log('Started on http://localhost:3000'))
+```
+
 ## Donate
 
 You can donate with fiat or crypto
